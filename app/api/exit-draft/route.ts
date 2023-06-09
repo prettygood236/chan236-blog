@@ -3,6 +3,6 @@ import { redirect } from 'next/navigation';
 
 export async function GET(request: Request) {
   draftMode().disable();
-  redirect('/');
+  // redirect('/');
   return new Response('Draft mode is disabled');
 }

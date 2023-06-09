@@ -15,6 +15,8 @@ const query = groq`
 
 export default async function HomePage() {
   const { isEnabled } = draftMode();
+  // console.log(isEnabled ? 'In Draft' : 'Not in Draft fuck you');
+
   if (isEnabled) {
     return (
       <PreviewSuspense
