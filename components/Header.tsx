@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '@/public/img/logo.png';
+import ThemeSwitch from './ThemeSwitch';
 
 export default function Header() {
   return (
@@ -16,6 +17,9 @@ export default function Header() {
           />
         </Link>
         <h1>Hi</h1>
+        <div>
+          <ThemeSwitch />
+        </div>
       </div>
 
       <div>haha</div>

@@ -2,6 +2,8 @@ import Header from '@/components/Header';
 import '../../styles/globals.css';
 import { Inter } from 'next/font/google';
 import Banner from '@/components/Banner';
+import { Providers } from './providers';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,9 +21,12 @@ export default function RootLayout({
     <html lang='en'>
       {/* <body className={inter.className}> */}
       <body className='max-w-7xl mx-auto'>
-        <Header />
-        <Banner />
-        {children}
+        <Providers>
+          <Header />
+          <Banner />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
